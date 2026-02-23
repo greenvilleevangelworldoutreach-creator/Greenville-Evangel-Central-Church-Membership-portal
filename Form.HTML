@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Church Membership Portal</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f6f9;
+}
+
+header{
+    background:#000000;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+header img{
+    width:100px;
+    border-radius:50%;
+}
+
+section{
+    padding:40px 20px;
+    text-align:center;
+}
+
+.card{
+    background:white;
+    max-width:900px;
+    margin:20px auto;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+button{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+button:hover{
+    background:#2563eb;
+}
+
+iframe{
+    width:100%;
+    height:900px;
+    border:none;
+    border-radius:10px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="Logo.png" alt="Church Logo">
+    <h1>Greenville Evangel Central Church</h1>
+    <p>Membership Registration Portal</p>
+</header>
+
+<!-- Pastor Message -->
+<section>
+<div class="card">
+     <img src="Rev. Kanmoh.jpg" alt="Lead Pastor">
+    <h2>A Message from the Lead Pastor: Rev. Juhah F. Kanmoh Sr.</h2>
+    <center>
+    <p>
+    Beloved in Christ,
+
+Welcome to our church family! It is with great joy and gratitude that I greet you. Whether you are visiting for the first time, considering membership, or already a committed member, know that you are not here by accident God has a purpose for your life.
+
+Our church is more than a building; it is a living, growing family of believers united by faith, love, and the Word of God. We are committed to creating a place where lives are transformed, hope is restored, and destinies are shaped through the power of Jesus Christ.
+
+As your Lead Pastor, my heart’s desire is to see every member grow spiritually, discover their God-given gifts, and walk confidently in their calling. <br><br> We believe in strong teaching, passionate worship, genuine fellowship, and impactful service to our community.
+
+Membership is not just about attending services  it is about belonging, serving, and growing together. Here, you will find support in times of challenge, encouragement in times of doubt, and celebration in times of victory.
+
+I invite you to join us fully participate, connect, serve, and allow God to use you in mighty ways. Together, we will build a church that reflects God’s love and shines His light in the world.
+
+May the Lord bless you richly and guide you in every step. <br> <br>
+
+With love and prayers,
+
+Lead Pastor
+Rev. Juhah F. Kanmoh, Sr. <br>
+Greenville evangel world outreach ministries inc.
+    </p>
+    </center>
+</div>
+</section>
+
+<!-- Registration Form -->
+<section>
+<div class="card">
+    <h2>Church Membership Form</h2>
+
+    <!-- PASTE YOUR GOOGLE FORM LINK BELOW -->
+    <iframe src="https://forms.gle/8RB4vrmBikdCqwz79"></iframe>
+
+</div>
+</section>
+<!-- Membership ID Generator -->
+<section>
+<div class="card">
+    <h2>Generate Member ID</h2>
+    <p>Click the button below to generate your temporary Member ID.</p>
+    <h3 id="memberID">----</h3>
+    <button onclick="generateID()">Generate ID</button>
+</div>
+</section>
+
+<!-- Follower us on our social Media -->
+<section>
+<div class="card">
+    <h2>Find us on </h2>
+    <p>Facebook.</p>
+    
+    <!-- Facebook link -->
+        <button>Keep following us  online</button>
+    </a>
+</div>
+</section>
+
+<footer>
+    <p>© 2026 Greenville Evangel Central  Church | All Rights Reserved</p>
+</footer>
+
+<script>
+function generateID(){
+    let random = Math.floor(10000 + Math.random() * 90000);
+    document.getElementById("memberID").innerHTML = "CH-" + random;
+}
+</script>
+
+</body>
+</html>
